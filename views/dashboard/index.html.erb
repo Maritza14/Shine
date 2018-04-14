@@ -1,0 +1,30 @@
+<body background="http://fondosdepantallagratis.net/images/img9/fondos-de-navidad-para-paginas-web-wallpaper-hd-4.jpg">
+
+<header>
+
+  <h1>
+    BIENVENIDO USUARIO:, <%= current_user.email%>
+  </h1>
+
+  <br>
+  <h2>Estamos usando Rails <%= Rails.version %></h2>
+<br>
+</header>
+<br>
+
+<section>
+  <p>Futuro hogar de Shine's Dashboard</p>
+  <br>
+  <p>Busca Clientes</p><%= link_to "Customers", customers_ng_path%>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Terminar sesion</p><%= link_to "Salir", destroy_user_session_path, method: :delete %>
+</section>
+
+</body>
